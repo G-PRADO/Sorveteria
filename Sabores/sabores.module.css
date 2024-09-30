@@ -1,0 +1,115 @@
+.container_banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+}
+
+.titulo{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 80px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.container_titulo{
+    display: flex;
+    justify-content: center;
+    margin: 20vh 0 10vh 0;
+}
+
+.titulo_container{
+    font-size: 40px;
+}
+
+.container_sabores{
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    padding: 0 20vh 5vh 20vh;
+}
+
+.card_sabores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 40vh;
+    gap: 2vh;
+    box-shadow: 0 4px 15px   rgba(2, 0, 0, 0.5);
+    padding: 2vh;
+}
+
+.sabores_Sorvete{
+    width: 80%;
+    height: auto;
+}
+
+.titulo_sabores{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 720px) and (max-width: 879px) {
+
+    .titulo{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 40px;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    }
+
+    .container_sabores{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .card_sabores{
+        display: flex;
+        width: 100vw;
+        height: 40vh;
+        box-shadow: 0 4px 15px rgba(2, 0, 0, 0.5);
+    }
+
+}
+
+@media screen and (min-width: 315px) and (max-width: 375px) {
+
+    .container_banner{
+        width: 100%;
+    }
+
+    .titulo{
+        position: absolute;
+        color: #FFFFFF;
+        font-size: 20px;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    }
+
+    .container_sabores{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .card_sabores{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: auto;
+        box-shadow: 0 4px 15px rgba(2, 0, 0, 0.5);
+    }
+
+    .titulo_container{
+       font-size: 20px;
+    }
+}
